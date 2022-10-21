@@ -22,15 +22,15 @@ def run_game():
         else:
             # gana o jugador o compu 
             display_victory(winner)
-        # pregunto al usuario y si quiere salir  salgo con un break
+        # pregunto al usuario y si quiere salir  salgo con un break.
         resp = another_match()
         if resp == False:
             break 
-    
-        
-       
-
+         
 def display_match(play1, play2):
+    """
+    Imprime la lucha entre las dos jugadas 
+    """
     print(f'{play1.description()} vs {play2.description()} ➢ ➢ ➢ ➢ FIGHT!!!\n')
 
 def display_game():
@@ -92,7 +92,6 @@ def get_user_response():
 
     return response
 
-
 def random_play():
     """
     Selecciona una jugada al azar para competir con el usuario
@@ -127,6 +126,9 @@ def display_victory(winner):
     print("__________________________________________________")
 
 def another_match():
+    """
+    Pregunta al user si quiere jugar otra vez.
+    """
     while True:
         rematch = input("\nDo you want to keep playing?  Y/N:\n >> ")
         if rematch.lower() == "y":
@@ -141,9 +143,6 @@ def another_match():
             print("You must enter a correct character. Try again.")
             continue
         
-
-
-
 
 if __name__ == '__main__':
     run_game()

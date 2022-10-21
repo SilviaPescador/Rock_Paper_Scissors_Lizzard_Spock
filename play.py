@@ -34,7 +34,7 @@ class Play(object):
             #tal vez seamos iguales, vamos a comparar propiedades
             return self.description() == other.description()
         else:
-            # ni de coña podemos ser iguales
+            # no somos iguales
             return False
 
     def __hash__(self):
@@ -62,7 +62,7 @@ class Scissors(Play):
 
     def description(self):
         return "Scissors"
-    # en esta usamos otra alternativa igualmente valida para definir esta clase
+    
     
 class Rock(Play):
     def beats (self):
