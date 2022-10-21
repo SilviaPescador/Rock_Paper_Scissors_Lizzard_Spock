@@ -1,5 +1,5 @@
-# Piedra Papel Tijera Lagarto Spock // 
-# Rock Paper Scissors Lizard Spock
+# Piedra Papel Tijera Lagarto Spock 
+# (Rock Paper Scissors Lizard Spock)
 
 Esquema del juego:
 
